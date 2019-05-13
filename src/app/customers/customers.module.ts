@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { CustomersComponent } from './customers.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { FilterTextboxComponent } from './customers-list/filter-textbox/filter-textbox.component';
+import { CustomersRoutingModule } from './customers-routing.module';
 
 @NgModule({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, CustomersRoutingModule],
   declarations: [CustomersComponent, CustomersListComponent, FilterTextboxComponent],
   exports: [CustomersComponent]
 })
